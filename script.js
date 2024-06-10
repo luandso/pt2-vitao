@@ -21,7 +21,6 @@ function renderNames() {
   });
 }
 
-// Função para adicionar um nome
 function addName(event) {
   event.preventDefault();
   const newName = nameInput.value.trim();
@@ -49,8 +48,6 @@ function deleteName(index) {
   }
 }
 
-// Adicionando o evento de submit ao formulário
 nameForm.addEventListener('submit', addName);
 
-// Inicializando a renderização da lista de nomes
 renderNames();
